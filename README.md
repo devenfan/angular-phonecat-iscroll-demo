@@ -31,11 +31,11 @@ Angular Phonecat Demo porting for angular-iscroll (https://github.com/ibspoof/ng
 - https://github.com/angular/angular.js/releases/tag/v1.1.5
 
 ### ng-iScroll  1.2b
-https://github.com/ibspoof/ng-iScroll/tree/v1.2b
+- https://github.com/ibspoof/ng-iScroll/tree/v1.2b
 
 ### iScroll 5.0.6
-https://github.com/cubiq/iscroll
-https://github.com/cubiq/iscroll/releases/tag/v5.0.6
+- https://github.com/cubiq/iscroll
+- https://github.com/cubiq/iscroll/releases/tag/v5.0.6
 
 ### Angular-snap 1.0.0
 - https://github.com/jtrussell/angular-snap.js
@@ -44,7 +44,6 @@ https://github.com/cubiq/iscroll/releases/tag/v5.0.6
 ### snap.js 1.9.3
 - https://github.com/jakiestfu/Snap.js
 - Until 2013-11-06, it's v1.9.3
-
 
 
 

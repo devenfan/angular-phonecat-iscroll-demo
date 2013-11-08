@@ -1,0 +1,49 @@
+<div class="container-fluid">
+
+    <div class="row-fluid">
+
+        <div width="30%" snap-drawer>
+            <!--Sidebar content-->
+            Search: <input ng-model="query">
+            <br/>
+
+            Sort by:
+            <select ng-model="orderProp">
+                <option value="name">Alphabetical</option>
+                <option value="age">Newest</option>
+            </select>
+
+        </div>
+
+        <div width="70%" snap-content snap-options="snapOpts">
+
+            <div id="header-red">
+                <!-- Here link a.href must be empty string!!! -->
+                <a href="" id="open-left-drawer" ng-click="toggleDrawer()"></a>
+                <h1>Phones</h1>
+            </div>
+
+            <div id="wrapper" ng-iscroll='wrapper' ng-iscroll-delay='50'>
+
+                <div id="scroller">
+                    <ul  class="phones-list">
+                        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp"
+                            class="thumbnail phone-listing">
+
+                            <a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
+                            <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
+
+                            <p>{{phone.snippet}}</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div id="footer-gray"></div>
+
+        </div>
+
+
+    </div>
+</div>

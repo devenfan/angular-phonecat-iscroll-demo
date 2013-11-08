@@ -1,0 +1,302 @@
+/* app css stylesheet */
+
+body {
+    padding-top: 20px;
+}
+
+.phone-images {
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
+.phones-list {
+    margin-top: 50px;
+    /*
+    padding-top: 50px;
+    */
+    list-style: none;
+}
+
+.phones-list li {
+    clear: both;
+    height: 100px;
+    width: 70%;
+    padding-top: 15px;
+}
+
+.thumb {
+    float: left;
+    margin: -1em 1em 1.5em 0em;
+    padding-bottom: 1em;
+    height: 100px;
+    width: 100px;
+}
+
+/** Detail View **/
+img.phone-display {
+    float: left;
+    margin-right: 3em;
+    margin-bottom: 2em;
+    background-color: white;
+    padding: 2em;
+    height: 400px;
+    width: 400px;
+}
+
+ul.phone-thumbs {
+    margin: 0;
+    list-style: none;
+}
+
+ul.phone-thumbs li {
+    border: 1px solid black;
+    display: inline-block;
+    margin: 1em;
+    background-color: white;
+}
+
+ul.phone-thumbs img {
+    height: 100px;
+    width: 100px;
+    padding: 1em;
+}
+
+ul.phone-thumbs img:hover {
+    cursor: pointer;
+}
+
+ul.specs {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.specs > li {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+
+ul.specs > li > span {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+ul.specs dt {
+    font-weight: bold;
+}
+
+/*
+h1 {
+    border-bottom: 1px solid gray;
+}
+*/
+
+
+
+
+
+/* snap related styles */
+
+.snap-content {
+    background: #FFFFFF;
+}
+
+.snap-drawer {
+    background: #323949;
+    color: #ffffff;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.snap-drawer h3 {
+    font-size: 36px;
+    font-weight: normal;
+    margin: 15px;
+}
+
+.snap-drawer h4 {
+    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 0;
+}
+
+.snap-drawer ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.snap-drawer li > a {
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #000;
+    text-decoration: none;
+    color: #ccc;
+    text-indent: 20px;
+}
+
+.snap-drawer p {
+    opacity: 0.5;
+    padding: 15px;
+    font-size: 12px;
+}
+
+
+#toolbar {
+    background: #536ea7;
+    border-bottom: 1px solid #111b32;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 44px;
+}
+
+#toolbar h1 {
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 10px;  /* This attribute is must*/
+    right: 44px;
+    left: 44px;
+    width: auto;
+    height: 44px;
+}
+
+#open-left-drawer {
+    background: url(../img/open.png) center center no-repeat;
+    display: block;
+    width: 44px;
+    height: 44px;
+}
+
+
+
+
+
+
+/*  iScroll related style... */
+
+#header-red {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background-color: #d51875;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #fe96c9), color-stop(0.05, #d51875), color-stop(1, #7b0a2e));
+    background-image: -moz-linear-gradient(top, #fe96c9, #d51875 5%, #7b0a2e);
+    background-image: -o-linear-gradient(top, #fe96c9, #d51875 5%, #7b0a2e);
+    padding: 0;
+    color: #eee;
+    font-size: 20px;
+    text-align: center;
+}
+
+#header-red h1 {
+    color: #f3f3f3;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    position: absolute;
+    top: 10px;  /* This attribute is must*/
+    right: 44px;
+    left: 44px;
+    width: auto;
+    height: 44px;
+}
+
+#footer-gray {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background-color: #222;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.02, #666), color-stop(1, #222));
+    background-image: -moz-linear-gradient(top, #999, #666 2%, #222);
+    background-image: -o-linear-gradient(top, #999, #666 2%, #222);
+    padding: 0;
+    border-top: 1px solid #444;
+}
+
+
+#wrapper {
+    position:absolute; z-index:1;
+    top:45px; bottom:48px; left:0;
+    width:100%;
+    background:#ffffff;
+    overflow:auto;
+}
+
+#wrapper2 {
+    position:absolute; z-index:1;
+    top:45px; bottom:48px; left:0;
+    width:50%;
+    background:#555;
+    overflow:auto;
+}
+
+#wrapper3 {
+    position:absolute; z-index:1;
+    top:45px; bottom:48px; left:51%;
+    width:50%;
+    background:#555;
+    overflow:auto;
+}
+
+
+#scroller, .scroller {
+    position:relative;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    float:left;
+    width:100%;
+    padding:0;
+}
+
+#scroller ul, .scroller ul {
+    position:relative;
+    list-style:none;
+    padding:0;
+    margin:0;
+    width:100%;
+    text-align:left;
+}
+
+#scroller li, .scroller li {
+    padding:0 10px;
+    /*height:40px;*/
+    line-height:40px;
+    border-bottom:1px solid #ccc;
+    border-top:1px solid #fff;
+    background-color:#fafafa;
+    font-size:14px;
+}
+
+
+#scroller li > a, .scroller li > a {
+    display:block;
+}
+
+#scroller img {
+    padding-top: 10px;
+}
